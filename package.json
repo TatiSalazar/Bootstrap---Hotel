@@ -1,0 +1,16 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "primer proyecto boots\u001bttrap con nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://tatianasala@bitbucket.org/tatianasala/guia-hoteles.git"
+  },
+  "author": "tatiana salazar",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/tatianasala/guia-hoteles#readme"
+}
