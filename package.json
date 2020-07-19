@@ -12,5 +12,8 @@
   },
   "author": "tatiana salazar",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/tatianasala/guia-hoteles#readme"
+  "homepage": "https://bitbucket.org/tatianasala/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
