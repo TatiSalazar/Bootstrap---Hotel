@@ -4,7 +4,7 @@
   "description": "primer proyecto boots\u001bttrap con nodejs",
   "main": "index.html",
   "scripts": {
-    "dev":  "lite-server",
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +16,9 @@
   "homepage": "https://bitbucket.org/tatianasala/guia-hoteles#readme",
   "devDependencies": {
     "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1"
   }
 }
