@@ -9,18 +9,41 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/main.css">
 
-    <title >        Guia Hoteles</title>
+    <title >Guia Hoteles</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Hoteles</a>
+     
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"> <a class="nav-link" href="./about.html">Nosotros</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#">Precios</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#">Terminos y Condiciones</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#">Contacto</a></li>
+          </ul>
+        </div>
+    </nav>
     <div class="jumbotron">
       <h1 class="text-center">Hoteles</h1>
     </div>
     <div class="container"> 
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
       <div  class="row">
         <div class="col-sm-4"> 
             <p>
               <h3>Como funciona?</h3>
-              <p>Busca los hoteles de acuerdo a tu preferencia.</p>
+              <p>Busca los hoteles de acuerdo la ciudad donde te encuentres</p>
             </p>
         </div>
         <div class="col-sm-4">
@@ -39,39 +62,50 @@
     <hr>
     <div class="d-flex flex-wrap flex-row-reverse">
       <div class="card-hotel  d-flex flex-column justify-content-between">
-        <h4>Hotel Barcelona</h4>
-        <p>Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa</p>
-      </div>
+        <div>
+          <h4>Hotel Barcelona</h4>
+          <p>Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa</p>
+        </div>
       <div>
         <button class="btn btn-primary btn-reserva">Reservar</button>
       </div>
+      </div>
+
             <div class="card-hotel d-flex flex-column justify-content-between">
-              <h4>Hotel Lima</h4>
-              <p>Hotel ubicado en pleno centro de lima</p>
-            </div>
+              <div>
+                <h4>Hotel Lima</h4>
+                <p>Hotel ubicado en pleno centro de lima</p>
+              </div>
               <div>
               <button class="btn btn-primary btn-reserva">Reservar</button>
             </div>
+            </div>
                   <div class="card-hotel  d-flex flex-column justify-content-between ">
-                    <h4>Hotel La Paz</h4>
-                    <p>Hotel ubicado en pleno centro</p>
-                  </div>
+                    <div>
+                        <h4>Hotel La Paz</h4>
+                        <p>Hotel ubicado en pleno centro</p>
+                    </div>
                   <div>
                     <button class="btn btn-primary btn-reserva">Reservar</button>
                   </div>
+                  </div>
                         <div class="card-hotel  d-flex flex-column justify-content-between">
-                          <h4>Hotel Madrid</h4>
-                          <p>Hotel ubicado en pleno centro</p>
-                        </div>
+                          <div>
+                              <h4>Hotel Madrid</h4>
+                              <p>Hotel ubicado en pleno centro</p>
+                          </div>
                         <div>
                           <button class="btn btn-primary btn-reserva">Reservar</button>
                         </div>
-                        <div class="card-hotel  d-flex flex-column justify-content-between">
-                          <h4>Hotel San Pablo</h4>
-                          <p>Hotel ubicado en pleno centro</p>
                         </div>
+                        <div class="card-hotel  d-flex flex-column justify-content-between">
+                          <div>
+                            <h4>Hotel San Pablo</h4>
+                              <p>Hotel ubicado en pleno centro</p>
+                          </div>
                         <div>
                           <button class="btn btn-primary btn-reserva">Reservar</button>
+                        </div>
                         </div>
 </div>
 </div>
@@ -84,7 +118,7 @@
       <a href="http://www.google.com">Google</a>
     </div>
    
-    <div class="col-sm-4 d-flex float-left ">
+    <div class="col-sm-4 ">
       <address>
         <h3>Oficina Central</h3>
         <p>Bogota,Colombia</p>
@@ -94,7 +128,7 @@
     
     </div>
 
-    <div class="col-sm-4 d-flex align-items-end">
+    <div class="col-sm-4 d-flex flex-column align-items-end">
       <a href="http://www.facebook.com"> Nosotros </a>
       <a href="http://www.twitter.com"> Precios </a>
       <a href="http://www.instagram.com"> Terminos y condiciones </a>
