@@ -38,6 +38,42 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item active" aria-current="page">Home</li>
         </ol>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false"
+                aria-controls="multiCollapseExample1">¿Como funciona?</button>
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false"
+                aria-controls="multiCollapseExample2">¿Donde puedo reservar?</button>
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false"
+                aria-controls="multiCollapseExample1 multiCollapseExample2">¿Como pago?</button>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-sm-4 collapse multi-collapse" id="funciona">
+                <p>
+                <h3>¿Como funciona?</h3>
+                <p>Busca busca diferentes hoteles de acuerdo la ciudad donde te encuentres y la cantidad de estrellas</p>
+                </p>
+              </div>
+              <div class="col-sm-4 collapse multi-collapse" id="reserva">
+                <p>
+                <h3>¿Donde puedo reservar?</h3>
+                <p>Elige el hotel que te interese y luego realiza la reserva con tus datos</p>
+                </p>
+              </div>
+              <div class="col-sm-4 collapse multi-collapse" id="pago">
+                <p>
+                <h3>¿Como pago?</h3>
+                <p>En linea, usando la tarjeta que desees</p>
+                </p>
+              </div>
+            </div>
+
         <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-interval="10000">
@@ -63,91 +99,105 @@
           </a>
         </div>
       </nav>
-      <div  class="row">
-        <div class="col-sm-4"> 
-            <p>
-              <h3>¿Como funciona?</h3>
-              <p>Busca busca diferentes hoteles de acuerdo la ciudad donde te encuentres y la cantidad de estrellas</p>
-            </p>
-        </div>
-        <div class="col-sm-4">
-          <p>
-          <h3>¿Donde puedo reservar?</h3>
-          <p>Elige el hotel que te interese y luego realiza la reserva con tus datos</p>
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <p>
-          <h3>¿Como pago?</h3>
-          <p>En linea, usando la tarjeta que desees</p>
-          </p>
-        </div>
-      </div>
+    
     <hr>
     <div class="d-flex flex-wrap flex-row-reverse">
       <div class="card card-hotel  d-flex flex-column justify-content-between ml-2">
         <div class="card-body">
-          <h5 class="card-title">Hotel Cosmos 116<br><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></h5>
+          <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de salsa gratis">Hotel Cosmos 116<br><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></h5>
           <h6 class="card-subtitle text-muted">Bogotá</h6>
             <img class="card-img-top" src="images/hotelcosmos.jpg" alt="hotel img">
           <p class="card-text">Hotel ubicado a 10.4km del centro de Bogotá</p>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
         </div>
       <div>
-        <button class="btn btn-primary btn-reserva">Reservar</button>
+        <button class="btn btn-primary btn-reserva" data-container="body" data-toggle="popover"  data-placement="top"  title="Promociones Consulta las promociones vigentes"  data-content="Consulta las promociones vigentes">Reservar</button>
       </div>
       </div>
                 <div class="card card-hotel  d-flex flex-column justify-content-between ml-2">
                   <div class="card-body">
-                    <h5 class="card-title">Estelar Playa <br><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de salsa gratis">Estelar Playa <br><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span
                       class="oi oi-star"></span></h5>
                     <h6 class="card-subtitle text-muted">Cartagena</h6>
                     <img class="card-img-top" src="images/estelar-playa-manzanillo.jpg" alt="hotel img">
                     <p class="card-text">Hotel ubicado a 1 km de la playa</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                   </div>
                   <div>
-                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                    <button class="btn btn-primary btn-reserva" data-container="body" data-toggle="popover"  data-placement="top"  title="Promociones Consulta las promociones vigentes"  data-content="Consulta las promociones vigentes">Reservar</button>
                   </div>
                 </div>
                 <div class="card card-hotel  d-flex flex-column justify-content-between ml-2">
                   <div class="card-body">
-                    <h5 class="card-title">Hotel Bahia Blanca <br><span class="oi oi-star"></span><span class="oi oi-star"></span></h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de salsa gratis">Hotel Bahia Blanca <br><span class="oi oi-star"></span><span class="oi oi-star"></span></h5>
                     <h6 class="card-subtitle text-muted">Santa Marta</h6>
                     <img class="card-img-top" src="images/hotel-bahia.jpg" alt="hotel img">
                     <p class="card-text">Hotel ubicado a 1 km de la ciudad y a 10 minutos de la playa</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                   </div>
                   <div>
-                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                    <button class="btn btn-primary btn-reserva" data-container="body" data-toggle="popover"  data-placement="top"  title="Promociones Consulta las promociones vigentes"  data-content="Consulta las promociones vigentes">Reservar</button>
                   </div>
                 </div>
                 <div class="card card-hotel  d-flex flex-column justify-content-between ml-2">
                   <div class="card-body">
-                    <h5 class="card-title">Hotel Casa Estaci <br><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de salsa gratis">Hotel Casa Estaci <br><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></h5>
                     <h6 class="card-subtitle text-muted">Medellin</h6>
                     <img class="card-img-top" src="images/casaestacion.jpg" alt="hotel img">
                     <p class="card-text">Próximo a centros comerciales, lugares turísticos y restaurantes</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                   </div>
                   <div>
-                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                    <button class="btn btn-primary btn-reserva" data-container="body" data-toggle="popover"  data-placement="top"  title="Promociones Consulta las promociones vigentes"  data-content="Consulta las promociones vigentes">Reservar</button>
                   </div>
                 </div>
                 <div class="card card-hotel  d-flex flex-column justify-content-between ml-2">
                   <div class="card-body">
-                    <h5 class="card-title">Hotel La Luna <br><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de salsa gratis">Hotel La Luna <br><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></h5>
                     <h6 class="card-subtitle text-muted">Cali</h6>
                     <img class="card-img-top" src="images/hotelluna.jpg" alt="hotel img">
                     <p class="card-text">Se encuentra a 35 minutos en coche del aeropuerto</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                   </div>
                   <div>
-                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                    <button  type="button" class="btn btn-primary btn-reserva" data-container="body" data-toggle="popover"  data-placement="top"  title="Promociones Consulta las promociones vigentes"  data-content="Consulta las promociones vigentes">Reservar</button>
                   </div>
-                </div>
-                
-                
-              
-
-                  
-                        
+                </div>                    
 </div>
+
+<div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contacto con el Hotel</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Tu email:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Mensaje</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+          </div> 
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Enviar</button>
+          </div>
+          </div>
+          </div>
+       
+
+      </div>
+
+
+
 </div>
 <footer>
   <div class="row">
@@ -184,5 +234,14 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        $("[data-toggle='tooltip']").tooltip();
+        $("[data-toggle='popover']").popover();
+        $('.carousel').carousel({
+          interval: 4000
+        });
+      });
+    </script>
   </body>
 </html>
